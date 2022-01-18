@@ -4,7 +4,7 @@ from recognition_service import RecognitionService
 storage_service = StorageService()
 recognition_service = RecognitionService()
 
-bucket_name = 'contents.aws.ai'
+bucket_name = 'content301133331'
 
 for file in storage_service.get_all_files(bucket_name):
     if file.key.endswith('.jpg'):
