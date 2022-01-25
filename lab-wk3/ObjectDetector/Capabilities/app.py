@@ -14,7 +14,7 @@ app.debug = True
 #####
 # services initialization
 #####
-storage_location = 'contents.aws.ai'
+storage_location = 'content301133331'
 storage_service = storage_service.StorageService(storage_location)
 recognition_service = recognition_service.RecognitionService(storage_service)
 
