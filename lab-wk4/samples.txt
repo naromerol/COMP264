@@ -1,0 +1,3 @@
+aws rekognition detect-text --image S3Object=\{Bucket=contentmayy,Name=german-one-way-street-sign.jpg\}
+
+aws translate translate-text --text "Einbahnstrabe" --source-language-code auto --target-language-code en
