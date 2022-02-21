@@ -1,0 +1,46 @@
+{
+    "Entities": [
+        {
+            "Id": 1,
+            "BeginOffset": 0,
+            "EndOffset": 13,
+            "Score": 0.9686933159828186,
+            "Text": "Nestor Romero",
+            "Category": "PROTECTED_HEALTH_INFORMATION",
+            "Type": "NAME",
+            "Traits": []
+        },
+        {
+            "Id": 2,
+            "BeginOffset": 14,
+            "EndOffset": 46,
+            "Score": 0.9986534118652344,
+            "Text": "nromerol@my.centennialcollege.ca",
+            "Category": "PROTECTED_HEALTH_INFORMATION",
+            "Type": "EMAIL",
+            "Traits": []
+        },
+        {
+            "Id": 3,
+            "BeginOffset": 47,
+            "EndOffset": 57,
+            "Score": 0.9937357902526855,
+            "Text": "6707607900",
+            "Category": "PROTECTED_HEALTH_INFORMATION",
+            "Type": "ID",
+            "Traits": []
+        },
+        {
+            "Id": 4,
+            "BeginOffset": 58,
+            "EndOffset": 117,
+            "Score": 0.9963298439979553,
+            "Text": "318 Rhodes Avenue M3L3A6 Toronto Ontario Centennial College",
+            "Category": "PROTECTED_HEALTH_INFORMATION",
+            "Type": "ADDRESS",
+            "Traits": []
+        }
+    ],
+    "UnmappedAttributes": [],
+    "ModelVersion": "1.0.0"
+}

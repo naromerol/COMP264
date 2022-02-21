@@ -1,0 +1,53 @@
+{
+    "Entities": [
+        {
+            "Score": 0.990890383720398,
+            "Type": "PERSON",
+            "Text": "Nestor Romero",
+            "BeginOffset": 0,
+            "EndOffset": 13
+        },
+        {
+            "Score": 0.9841083884239197,
+            "Type": "OTHER",
+            "Text": "nromerol@my.centennialcollege.ca",
+            "BeginOffset": 14,
+            "EndOffset": 46
+        },
+        {
+            "Score": 0.8011139631271362,
+            "Type": "OTHER",
+            "Text": "6707607900",
+            "BeginOffset": 47,
+            "EndOffset": 57
+        },
+        {
+            "Score": 0.5239292979240417,
+            "Type": "OTHER",
+            "Text": "318",
+            "BeginOffset": 58,
+            "EndOffset": 61
+        },
+        {
+            "Score": 0.8245623707771301,
+            "Type": "LOCATION",
+            "Text": "Rhodes Avenue",
+            "BeginOffset": 62,
+            "EndOffset": 75
+        },
+        {
+            "Score": 0.3746945261955261,
+            "Type": "OTHER",
+            "Text": "M3L3A6",
+            "BeginOffset": 76,
+            "EndOffset": 82
+        },
+        {
+            "Score": 0.7406841516494751,
+            "Type": "ORGANIZATION",
+            "Text": "Toronto Ontario Centennial College",
+            "BeginOffset": 83,
+            "EndOffset": 117
+        }
+    ]
+}
