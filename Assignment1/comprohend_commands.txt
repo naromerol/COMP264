@@ -1,1 +1,3 @@
-aws comprehend detect-entities --text "Nestor Romero nromerol@my.centennialcollege.ca 6707607900 318 Rhodes Avenue M3L3A6 Toronto Ontario Centennial College" --language-code en > nestor_comprehend_output.json
+aws comprehend detect-entities --text "Nestor Romero nromerol@my.centennialcollege.ca (670) 760 7900 318 Rhodes Avenue M3L3A6 Toronto Ontario Centennial College" --language-code en > nestor_comprehend_output.json
+
+aws comprehendmedical detect-entities-v2 --text "Nestor Romero nromerol@my.centennialcollege.ca (670) 760 7900 318 Rhodes Avenue M3L3A6 Toronto Ontario Centennial College" > nestor_comprehend_medical_output.json

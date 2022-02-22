@@ -1,53 +1,60 @@
 {
     "Entities": [
         {
-            "Score": 0.990890383720398,
+            "Score": 0.9921150207519531,
             "Type": "PERSON",
             "Text": "Nestor Romero",
             "BeginOffset": 0,
             "EndOffset": 13
         },
         {
-            "Score": 0.9841083884239197,
+            "Score": 0.9907503724098206,
             "Type": "OTHER",
             "Text": "nromerol@my.centennialcollege.ca",
             "BeginOffset": 14,
             "EndOffset": 46
         },
         {
-            "Score": 0.8011139631271362,
+            "Score": 0.9983947277069092,
             "Type": "OTHER",
-            "Text": "6707607900",
-            "BeginOffset": 47,
-            "EndOffset": 57
+            "Text": "(670) 760 7900",
+            "BeginOffset": 48,
+            "EndOffset": 62
         },
         {
-            "Score": 0.5239292979240417,
-            "Type": "OTHER",
-            "Text": "318",
-            "BeginOffset": 58,
-            "EndOffset": 61
-        },
-        {
-            "Score": 0.8245623707771301,
+            "Score": 0.4353325664997101,
             "Type": "LOCATION",
-            "Text": "Rhodes Avenue",
-            "BeginOffset": 62,
-            "EndOffset": 75
+            "Text": "318",
+            "BeginOffset": 64,
+            "EndOffset": 67
         },
         {
-            "Score": 0.3746945261955261,
-            "Type": "OTHER",
+            "Score": 0.7590298652648926,
+            "Type": "LOCATION",
+            "Text": "Avenue",
+            "BeginOffset": 75,
+            "EndOffset": 81
+        },
+        {
+            "Score": 0.5586485862731934,
+            "Type": "LOCATION",
             "Text": "M3L3A6",
-            "BeginOffset": 76,
-            "EndOffset": 82
+            "BeginOffset": 83,
+            "EndOffset": 89
         },
         {
-            "Score": 0.7406841516494751,
+            "Score": 0.823205292224884,
+            "Type": "LOCATION",
+            "Text": "Toronto Ontario",
+            "BeginOffset": 91,
+            "EndOffset": 106
+        },
+        {
+            "Score": 0.9624910950660706,
             "Type": "ORGANIZATION",
-            "Text": "Toronto Ontario Centennial College",
-            "BeginOffset": 83,
-            "EndOffset": 117
+            "Text": "Centennial College",
+            "BeginOffset": 108,
+            "EndOffset": 126
         }
     ]
 }
