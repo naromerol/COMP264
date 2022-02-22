@@ -53,7 +53,7 @@ def translate_image_text(image_id):
     translated_lines = []
     
     #create text to transform to speech
-    speech_input = ''
+    # speech_input = ''
 
     for line in text_lines:
         # check confidence
@@ -65,10 +65,16 @@ def translate_image_text(image_id):
                 'boundingBox': line['boundingBox']
             })
 
-            # extract only required text for speech synthesis
-            speech_input += ' ' + translated_line["translatedText"]
-
-    ### Inject speech synthesis service
-    speech_service.create_speech_from_text(speech_input, 'audio_result')
+            # # extract only required text for speech synthesis
+            # speech_input += ' ' + translated_line["translatedText"]
 
     return translated_lines
+
+@app.route('/create-audio', methods = ['POST'], cors = True)
+def create_text_audio():
+
+    request_data = json.loads(app.current_request.raw_body)
+    translation_lines = request_data['translation_lines']
+    
+    ### Call speech synthesis service
+    speech_service.create_speech_from_text(' '.join(translation_lines), 'audio_result')

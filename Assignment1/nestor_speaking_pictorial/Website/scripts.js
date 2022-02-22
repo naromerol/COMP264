@@ -65,6 +65,9 @@ function translateImage(image) {
 }
 
 function annotateImage(translations) {
+    // List of lines to send for audio synthesis
+    let translation_lines = new Array();
+
     let translationsElem = document.getElementById("translations");
     while (translationsElem.firstChild) {
         translationsElem.removeChild(translationsElem.firstChild);
@@ -75,14 +78,35 @@ function annotateImage(translations) {
         translationElem.appendChild(document.createTextNode(
             translations[i]["text"] + " -> " + translations[i]["translation"]["translatedText"]
         ));
+
         translationsElem.appendChild(document.createElement("hr"));
         translationsElem.appendChild(translationElem);
+
+        // include new translated line into the list for audio
+        translation_lines.push(translations[i]["translation"]["translatedText"]);
     }
+
+    return translation_lines
 }
 
 /** Simple function to control display of the audio control after the translation has been completed */
-function display_audio(){
-    document.getElementById("audio_result").style.display = "block";
+function create_audio(translation_lines){
+    return fetch(serverUrl + "/create-audio", {
+        method: "POST",
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({translation_lines : translation_lines})
+    }).then(response => {
+        if (response.ok) {
+            // return response.json();
+            document.getElementById("audio_result").style.display = "block";
+        } else {
+            throw new HttpError(response);
+        }
+    })
+    
 }
 
 function uploadAndTranslate() {
@@ -90,7 +114,7 @@ function uploadAndTranslate() {
         .then(image => updateImage(image))
         .then(image => translateImage(image))
         .then(translations => annotateImage(translations))
-        .then(display_audio())
+        .then(translated_lines => create_audio(translated_lines))
         .catch(error => {
             alert("Error: " + error);
         })
