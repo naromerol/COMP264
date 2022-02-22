@@ -13,7 +13,7 @@ logger = logging.getLogger()
 
 #create service client
 s3 = boto3.resource('s3')
-bucket_name = 'content301133331'
+bucket_name = 'content301133330'
 
 try:
 
