@@ -1,5 +1,7 @@
 import boto3
-
+# NESTOR ROMERO - 301133331
+# COMP264 MIDTERM
+# Template service taken from class lab exercises
 
 class TranslationService:
     def __init__(self):
